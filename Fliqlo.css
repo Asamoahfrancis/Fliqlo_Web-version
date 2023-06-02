@@ -1,0 +1,399 @@
+html
+{
+    box-sizing: border-box;
+    font-family:Helvetica, sans-serif;
+    color: rgb(185, 185, 185);
+    background-color: black;
+    font-weight: 900;
+}
+*,*::before,*::after
+{
+    box-sizing: inherit;
+}
+p{
+    margin: 0%;
+    padding: 0%;
+}
+
+main{
+    width: 90%;
+    display: flex;
+    position: relative;
+    height: auto;
+    margin: 0 auto;
+}
+.banner{
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    top: 50%;
+    background-color:  rgb(11, 21, 33);
+    z-index: 100;
+}
+
+.secOne{
+  flex: 1 1 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border: 1px solid transparent;
+}
+.HourTop_side
+{
+    flex: 1 1 50%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    position: relative;
+    height: auto;
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
+    background-color: rgb(16, 16, 16);
+    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgb(208, 169, 126);
+    border: 1px solid transparent;
+}
+.originalHour
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    overflow-y: hidden;
+    color: #b9b9b9;
+    color: #0b1521;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border: 1px solid transparent;
+
+}
+
+.putHour
+{
+    display: block;
+    font-size: 35vw;
+    position: absolute;
+    top: 30%;
+    background-color: rgb(16, 16, 16);
+    background-color: rgba(0, 0, 0, 0.1);
+    background-color: #d0a97e;
+
+
+    /*color: #b9b9b9;*/
+
+}
+.zeroHour
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    overflow-y: hidden;
+    transform: rotateX(0deg);
+    transition: all 0.3s;
+    z-index: 10;
+    background-color: rgb(16, 16, 16);
+    background-color: rgba(0, 0, 0, 0.1);
+    background-color: #d0a97e;
+
+    transform-origin: bottom center;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border: 1px solid transparent;
+   
+}
+.putZeroHour
+{
+    display: block;
+    font-size: 35vw;
+    position: absolute;
+    background-color: rgb(16, 16, 16);
+    background-color: rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    background-color: #d0a97e;
+
+    top: 30%;
+    color: #b9b9b9;
+    color: #0b1521;
+
+    transform: rotateX(0deg);
+
+
+
+}
+
+.HourDown_side
+{
+    flex: 1 1 50%;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+    background-color: rgb(16, 16, 16);
+    background-color: rgba(0, 0, 0, 0.1);
+    background-color: #d0a97e;
+
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    
+
+}
+.originalD
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: rgb(16, 16, 16);
+    background-color: rgba(0, 0, 0, 0.1);
+    background-color: #d0a97e;
+
+    transition: all 0.8s;
+    transform-origin: top center;
+    transform: rotateX(90deg);
+    z-index: 10;
+}
+.putD
+{
+    display: block;
+    font-size: 35vw;
+    position: absolute;
+    top: -70%;
+    color: green;
+    color: #0b1521;
+
+    background-color: rgb(16, 16, 16);
+    background-color: rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    background-color: #d0a97e;
+
+
+
+
+}
+.ninetyHour
+{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.putninetyMnute
+{
+    display: block;
+    font-size: 35vw;
+    position: absolute;
+    background-color: rgb(16, 16, 16);
+    background-color: rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    background-color: #d0a97e;
+
+    color: #0b1521;
+
+    top: -70%;
+   
+}
+.secTwo{
+    flex: 1 1 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border: 1px solid transparent;
+
+  }
+  
+  
+  .MinuteTop_side
+{
+    flex: 1 1 50%;
+    position: relative;
+    height: auto;
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
+    background-color: rgb(16, 16, 16);
+    background-color: rgba(0, 0, 0, 0.1);
+    background-color: #d0a97e;
+
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border: 1px solid transparent;
+
+   
+}
+.originalMinute
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    overflow-y: hidden;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border: 1px solid transparent;
+    color: #b9b9b9;
+    color: #0b1521;
+
+
+}
+.putoriginalMinute
+{
+    display: block;
+    font-size: 35vw;
+    position: absolute;
+    top: 30%;
+    background-color: rgb(16, 16, 16);
+    background-color: rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    color: #0b1521;
+    background-color: #d0a97e;
+
+
+   
+
+}
+.zeroMinute
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    overflow-y: hidden;
+    transform: rotateX(0deg);
+    transition: all 0.3s;
+    z-index: 10;
+    background-color: rgb(16, 16, 16);
+    background-color: rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+
+    transform-origin: bottom center;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border: 1px solid transparent;
+
+    background-color: #d0a97e;
+
+}
+.putzeroMinute{
+    display: block;
+    font-size: 35vw;
+    position: absolute;
+    background-color: rgb(16, 16, 16);
+    background-color: rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+
+    top: 30%;
+    transform: rotateX(0deg);
+    color: #b9b9b9;
+    color: #0b1521;
+    background-color: #d0a97e;
+
+
+}
+.MinuteDown_side
+{
+    flex: 1 1 50%;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+    background-color: rgb(16, 16, 16);
+    background-color: rgba(0, 0, 0, 0.1);
+
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: #d0a97e;
+
+}
+.originalD_Minute
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: rgb(16, 16, 16);
+    background-color: rgba(0, 0, 0, 0.1);
+    background-color: #d0a97e;
+
+    transition: all 0.8s;
+    transform-origin: top center;
+    transform: rotateX(90deg);
+    z-index: 10;
+   
+
+}
+.putoriginalD_Minute
+{
+    display: block;
+    font-size: 35vw;
+    position: absolute;
+    background-color: rgb(16, 16, 16);
+    background-color: rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    color: #0b1521;
+    top: -70%;
+    background-color: #d0a97e;
+}
+.ninetyMinute
+{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.putninetyMinute
+{
+    display: block;
+    font-size: 35vw;
+    position: absolute;
+    background-color: rgb(16, 16, 16);
+    background-color: rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    color: #0b1521;
+    background-color: #d0a97e;
+    top: -70%;
+
+}
+
+.status{
+    position: absolute;
+    color: #0b1521;
+    z-index: 100;
+    top: 20px;
+    left: 30px;
+    font-size: 5vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
